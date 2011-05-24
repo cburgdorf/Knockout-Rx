@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+  <title>Page Title</title> 
+  <script src="libs/jquery/jquery-1.5.0.min.js"></script>
+  <script src="libs/knockout/knockout-1.2.0.js"></script>
+  <script src="libs/knockout/knockout-bindings.js" type="text/javascript"></script>
+  <script src="libs/knockout/knockout.mapping-latest.js" type="text/javascript"></script>
+  <script src="libs/rx/rx.js" type="text/javascript"></script>
+  <script src="libs/rx/rx.jQuery.js" type="text/javascript"></script>
+  <script src="libs/rx/rx.knockout.js" type="text/javascript"></script>
+  <script src="app/App.js"></script>
+  <script src="app/App.ViewModels.SearchViewModel.js"></script>
+  <script src="app/App.WikipediaService.js"></script>
+  
+</head> 
+    <body style="font-family: Consolas, monospace; overflow: hidden">
+        <div id="container"></div>
+		<input size="100" type="text" data-bind="value: searchInput, valueUpdate: 'afterkeydown'" /> <ul data-bind="ulValue: data" /> <p id="error" />
+    </body>
+</html
